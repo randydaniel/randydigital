@@ -1,0 +1,36 @@
+@use 'dark' as *;
+@use 'light' as *;
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import 'typography';
+@import 'mixins';
+
+:root {
+	&,
+	.light {
+		@include light();
+	}
+
+	.dark {
+		@include dark();
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		@include dark();
+	}
+}
+
+@include headings {
+	font-family: 'PPMondwest', 'sans-serif';
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--primary-color);
+  font-family: 'Inter', 'sans-serif';
+}

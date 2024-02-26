@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%sveltekit.head%
+	</head>
+
+	<body data-sveltekit-preload-data="hover">
+    
+    <script>
+			// Set the right color mode based on the user's preferred color scheme.
+			const darkMode = sessionStorage.getItem('darkMode');
+			if (null !== darkMode) {
+				document.body.classList.add(darkMode === 'true' ? 'dark' : 'light');
+			}
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55197164-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-55197164-6');
+    </script>
+
+		<div style="display: contents">%sveltekit.body%</div>
+
+	</body>
+</html>
