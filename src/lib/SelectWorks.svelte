@@ -34,8 +34,8 @@
       {#each selectWorks as work}
       <div class="work p-8 border-x border-b border-grid-lines">
         <div class="flex mb-6">
-          <span class="sw-service text-xs border bg-primary border-primary rounded-full px-3 py-1 leading-none mr-1">{work.service}</span>
-          <span class="sw-program text-xs border border-primary border-dashed rounded-full px-3 py-1 leading-none">{work.program}</span>
+          <span class="sw-service text-xs uppercase border bg-primary border-primary rounded-full px-3 py-1 leading-none mr-1">{work.service}</span>
+          <span class="sw-program text-xs uppercase border border-primary border-dashed rounded-full px-3 py-1 leading-none">{work.program}</span>
         </div>
         <h2 class="text-8xl font-bold uppercase">{work.title}</h2>
       </div>
