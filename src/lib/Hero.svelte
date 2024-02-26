@@ -8,6 +8,7 @@
   import TagOutline from '$lib/assets/images/tag-outline.svg';
   import TagFull from '$lib/assets/images/tag-full.svg';
   import TagArrowTopRight from '$lib/assets/images/tag-arrow_tr.svg';
+  import ButtonArrowTopRight from '$lib/assets/images/button-arrow_tr.svg';
 
   let elements;
 
@@ -51,9 +52,9 @@
       <div class="col-span-2 border-grid-lines">
         <a class="block w-full h-full hover:bg-primary transition transition-duration-300 ease-in-out" href="mailto:hey@randy.digital">
           <div class="flex items-center justify-center w-full h-full">
-            <div class="flex">
-              <span class="font-display text-2xl uppercase mr-2 px-8 py-3 text-center border-2 border-dashed rounded-full">Let's Work Together</span>
-              <img src={TagArrowTopRight} alt="" />
+            <div class="flex font-display text-2xl uppercase mr-2 px-4 py-2 text-center border-2 border-dashed rounded-full">
+              <span>Let's Work Together</span>
+              <span class="flex justify-center font-display text-2xl uppercase ml-2 border-2 border-dashed rounded-full leading-none w-[30px] h-[30px]">↗</span>
             </div>
           </div>
         </a>
