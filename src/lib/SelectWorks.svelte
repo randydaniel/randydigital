@@ -7,31 +7,31 @@
 			title: 'Boring Design Club',
 			service: 'Web Development',
       program: 'Framer',
-      img: './src/lib/assets/images/sw-bdc.png'
+      img: '/select-work/bdc.png'
 		},
     {
 			title: 'ML UI Design System',
 			service: 'Design System',
       program: 'Figma',
-      img: './src/lib/assets/images/sw-mlui.png'
+      img: '/select-work/mlui.png'
 		},
     {
 			title: 'Keurig/Dr. Pepper',
 			service: 'Web Development',
       program: 'Salesforce',
-      img: './src/lib/assets/images/sw-kdp.png'
+      img: '/select-work/kdp.png'
 		},
     {
 			title: 'Activated.Bio',
 			service: 'UX/UI',
       program: 'Figma',
-      img: './src/lib/assets/images/sw-activated.png'
+      img: '/select-work/activated.png'
 		},
     {
 			title: 'Radar Relay',
 			service: 'Web Development',
       program: 'Multi',
-      img: './src/lib/assets/images/sw-radar.png'
+      img: '/select-work/radar.png'
 		}
 	];
 
