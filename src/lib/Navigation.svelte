@@ -3,7 +3,7 @@
   import BrandingImg from '$lib/assets/images/rd.svg';
 </script>
 
-<nav class="border-y border-grid-lines sticky top-0">
+<nav class="border-y border-grid-lines sticky top-0 z-10">
   <div class="container">
     <ul class="grid grid-cols-6 font-display border-x border-grid-lines">
       <li class="col-span-2 border-r border-grid-lines"><div class="flex justify-center h-full w-full"><img class="branding" src={BrandingImg} alt="Randy Digital" /></div></li>
@@ -17,6 +17,8 @@
 
 <style lang="scss">
   nav {
+    background-color: var(--background-color); 
+
     .branding {
       max-width: 120px;
     }
