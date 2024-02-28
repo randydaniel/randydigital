@@ -52,7 +52,7 @@
       <!-- Social Platforms -->
       <div class="col-span-3">
         <ul id="social-platforms" class="grid grid-cols-3">
-          <li class="border-r border-grid-lines"><a href="https://dribbble.com/randydaniel" rel="noreferrer" target="_blank" class="block p-8 w-full h-full text-center text-2xl underline hover:no-underline hover:bg-primary transition transition-duration-300 ease-in-out">Dribbble<sup class="text-md ml-2">↗</sup></a></li>
+          <li class="border-r border-grid-lines"><a href="https://github.com/randydaniel" rel="noreferrer" target="_blank" class="block p-8 w-full h-full text-center text-2xl underline hover:no-underline hover:bg-primary transition transition-duration-300 ease-in-out">GitHub<sup class="text-md ml-2">↗</sup></a></li>
           <li class="border-r border-grid-lines"><a href="https://www.linkedin.com/in/randymdaniel/" rel="noreferrer" target="_blank" class="block p-8 w-full h-full text-center text-2xl underline hover:no-underline hover:bg-primary transition transition-duration-300 ease-in-out">Linkedin<sup class="text-md ml-2">↗</sup></a></li>
           <li class="border-grid-lines"><a href="https://twitter.com/randy__digital" rel="noreferrer" target="_blank" class="block p-8 w-full h-full text-center text-2xl underline hover:no-underline hover:bg-primary transition transition-duration-300 ease-in-out">Twitter(X)<sup class="text-md ml-2">↗</sup></a></li>
         </ul>
