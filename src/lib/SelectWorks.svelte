@@ -1,7 +1,6 @@
 <script>
-  import { onMount } from 'svelte';
-  import gsap from 'gsap';
-
+  import Drawer from '$lib/Drawer.svelte';
+  
 	let selectWorks = [
 		{
 			title: 'Boring Design Club',
@@ -35,52 +34,39 @@
 		}
 	];
 
-  onMount(() => {
-    selectWorks.forEach((work, index) => {
-      const workEl = document.querySelector(`#work-${index}`);
-      const imgEl = workEl.querySelector('.work-img');
+  let openItemId = null; // Tracks which item's drawer is open
 
-      // Adjust image size based on its natural dimensions
-      imgEl.addEventListener('load', () => {
-        imgEl.style.width = `${imgEl.naturalWidth}px`;
-        imgEl.style.height = `${imgEl.naturalHeight}px`;
-      });
-
-      workEl.addEventListener('mouseenter', () => {
-        gsap.to(imgEl, { autoAlpha: 1, duration: 0.3 });
-      });
-
-      workEl.addEventListener('mousemove', (e) => {
-        const rect = workEl.getBoundingClientRect();
-        const xPos = e.clientX - rect.left - imgEl.offsetWidth / 2;
-        const yPos = e.clientY - rect.top - imgEl.offsetHeight / 2;
-
-        gsap.to(imgEl, { x: xPos, y: yPos, duration: 0.3 });
-      });
-
-      workEl.addEventListener('mouseleave', () => {
-        gsap.to(imgEl, { autoAlpha: 0, duration: 0.3 });
-      });
-    });
-  });
+  function toggleDrawer(itemId) {
+    if (openItemId === itemId) {
+      openItemId = null; // Close the drawer if the same item is clicked again
+    } else {
+      openItemId = itemId; // Open the drawer for the clicked item
+    }
+  }
 </script>
 
 <section id="select-works" class="border-b border-grid-lines">
   <div class="container">
     <div class="grid">
       {#each selectWorks as work, index}
-      <div class="work p-8 border-x border-b border-grid-lines hover:cursor-pointer" id="work-{index}">
-        <img src="{work.img}" alt="{work.title}" class="work-img" />
-        <div class="work-content">
-          <div class="flex mb-6">
-            <span class="sw-service text-xs uppercase border bg-primary border-primary rounded-full px-3 py-1 leading-none mr-1">{work.service}</span>
-            <span class="sw-program text-xs uppercase border border-primary border-dashed rounded-full px-3 py-1 leading-none">{work.program}</span>
-          </div>
-          <h2 class="text-8xl font-bold uppercase">{work.title}</h2>
+      <div class="work p-8 border-x border-b border-grid-lines hover:cursor-pointer">
+        <div class="flex mb-6">
+          <span class="sw-service text-xs uppercase border bg-primary border-primary rounded-full px-3 py-1 leading-none mr-1">{work.service}</span>
+          <span class="sw-program text-xs uppercase border border-primary border-dashed rounded-full px-3 py-1 leading-none">{work.program}</span>
         </div>
+        <h2 class="text-8xl font-bold uppercase">
+          <a href="javascript:void(0)" 
+            role="button" 
+            aria-expanded="{openItemId === index ? 'true' : 'false'}" 
+            on:click={() => toggleDrawer(index)}>
+            {work.title}
+          </a>
+        </h2>
       </div>
       {/each}
     </div>
+    <!-- Drawer component is outside the loop -->
+    <Drawer workItem={selectWorks[openItemId]} on:close={() => openItemId = null} />
   </div>
 </section>
 
@@ -89,24 +75,6 @@
     .work {
       position: relative;
       // Ensure there's enough space for the image to be interacted with
-    }
-
-    .work-img {
-      border: 2px solid var(--primary-color);
-      border-radius: 44px;
-      position: absolute;
-      max-width: calc(100vw);
-      max-height: calc(100vh);
-      object-fit: contain; /* This will ensure the aspect ratio is maintained */
-      opacity: 0; /* Initially hidden */
-      pointer-events: none; /* Image does not interfere with mouse events */
-      z-index: 1; /* Behind the text */
-    }
-
-    .work-content {
-      position: relative;
-      z-index: 5; // Ensures text appears above the image
-      // Additional styling as needed
     }
 
     .work:last-of-type {
