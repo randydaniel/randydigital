@@ -49,7 +49,7 @@
   <div class="container">
     <div class="grid">
       {#each selectWorks as work, index}
-      <div class="work p-8 border-x border-b border-grid-lines hover:cursor-pointer">
+      <div class="work p-8 border-x border-b border-grid-lines">
         <div class="flex mb-6">
           <span class="sw-service text-xs uppercase border bg-primary border-primary rounded-full px-3 py-1 leading-none mr-1">{work.service}</span>
           <span class="sw-program text-xs uppercase border border-primary border-dashed rounded-full px-3 py-1 leading-none">{work.program}</span>
