@@ -11,16 +11,16 @@
 </script>
 
 <div class="h-screen border-t border-grid-lines opacity-90 z-10 drawer {workItem ? 'open' : ''}">
-  <div class="container h-screen">
-    <div class="grid grid-cols-1 relative">
+  <div class="container">
+    <div class="grid grid-cols-1">
       {#if workItem}
         <!-- Display the work item's details here -->
-        <div class="content p-8 border-x border-grid-lines">
+        <div class="content max-h-screen p-8 border-x border-grid-lines">
           <button class="close-btn" on:click={closeDrawer}>⊗</button>
           <h2 class="text-8xl font-bold uppercase text-center">{workItem.title}</h2>
-          <div class="grid grid-rows-1">
+          <div class="grid grid-rows-1 max-h-full">
             <div class="flex items-top justify-center p-8">
-              <img class="h-3/5 w-auto" src={workItem.img} alt={workItem.title} />
+              <img class="max-h-100 w-auto" src={workItem.img} alt={workItem.title} />
             </div>
           </div>
         </div>
