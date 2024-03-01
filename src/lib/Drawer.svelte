@@ -27,7 +27,7 @@
   });
 </script>
 
-<div class="h-screen border-t border-grid-lines z-10 drawer opacity-90 {workItem ? 'open' : ''}">
+<div class="h-screen border-t border-grid-lines z-10 drawer {workItem ? 'open' : ''}">
   <div class="container">
     <div class="grid grid-cols-1">
       {#if workItem}
@@ -50,6 +50,7 @@
 
 <style lang="scss">
 .drawer {
+  background-color: var(--background-color_dim) !important;
   position: fixed;
   left: 0; right: 0; bottom: 0;
   height: 100vh;
