@@ -56,6 +56,7 @@
         </div>
         <h2 class="text-8xl font-bold uppercase">
           <a href="javascript:void(0)" 
+            class="hover:underline transition transition-duration-300 ease-in-out"
             role="button" 
             aria-expanded="{openItemId === index ? 'true' : 'false'}" 
             on:click={() => toggleDrawer(index)}>
