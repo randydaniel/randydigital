@@ -1,13 +1,30 @@
 <script>
-  import { createEventDispatcher } from 'svelte';
+  import { onDestroy, createEventDispatcher } from 'svelte';
 
   export let workItem = null;
-
   const dispatch = createEventDispatcher();
+
+  // Function to toggle the no-scroll class
+  function toggleBodyScroll(disable) {
+    if (!import.meta.env.SSR) { // Ensure this runs only in the browser
+      const action = disable ? 'add' : 'remove';
+      document.body.classList[action]('no-scroll');
+    }
+  }
+
+  // Reactive statement for workItem
+  $: {
+    toggleBodyScroll(!!workItem);
+  }
 
   function closeDrawer() {
     dispatch('close');
   }
+
+  // Cleanup to ensure no-scroll is removed when the component is destroyed
+  onDestroy(() => {
+    toggleBodyScroll(false);
+  });
 </script>
 
 <div class="h-screen border-t border-grid-lines z-10 drawer {workItem ? 'open' : ''}">

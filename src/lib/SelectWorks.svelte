@@ -38,9 +38,9 @@
 
   function toggleDrawer(itemId) {
     if (openItemId === itemId) {
-      openItemId = null; // Close the drawer if the same item is clicked again
+        openItemId = null; // Close the drawer if the same item is clicked again
     } else {
-      openItemId = itemId; // Open the drawer for the clicked item
+        openItemId = itemId; // Open the drawer for the clicked item
     }
   }
 </script>
