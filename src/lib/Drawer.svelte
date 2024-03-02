@@ -33,7 +33,7 @@
       {#if workItem}
         <!-- Display the work item's details here -->
         <div class="content max-h-screen border-x border-grid-lines overflow-y-auto box-border">
-          <button class="close-btn absolute top-8 right-8 bg-none border-none cursor-pointer text-3xl font-thin" on:click={closeDrawer}>⊗</button>
+          <button class="close-btn absolute top-8 right-8 bg-none border-none cursor-pointer text-3xl font-thin z-10" on:click={closeDrawer}>⊗</button>
           <div class="sw-header grid grid-rows-1 sticky top-0 border-b border-grid-lines p-8">
             <div>
               <h2 class="text-8xl font-bold uppercase text-center">{workItem.title}</h2>
