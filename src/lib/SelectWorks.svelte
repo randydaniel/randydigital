@@ -49,7 +49,7 @@
   <div class="container">
     <div class="grid">
       {#each selectWorks as work, index}
-      <div class="work p-8 border-x border-b border-grid-lines">
+      <div class="work relative p-8 border-x border-b border-grid-lines last-of-type:border-b-0">
         <div class="flex mb-6">
           <span class="sw-service text-xs uppercase border bg-primary border-primary rounded-full px-3 py-1 leading-none mr-1">{work.service}</span>
           <span class="sw-program text-xs uppercase border border-primary border-dashed rounded-full px-3 py-1 leading-none">{work.program}</span>
@@ -73,14 +73,6 @@
 
 <style lang="scss">
   #select-works {
-    .work {
-      position: relative;
-      // Ensure there's enough space for the image to be interacted with
-    }
-
-    .work:last-of-type {
-      border-bottom: none;
-    }
 
     .sw-service {
       color: var(--text-color_inverted);
