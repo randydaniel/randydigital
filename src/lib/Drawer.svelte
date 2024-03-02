@@ -32,14 +32,18 @@
     <div class="grid grid-cols-1">
       {#if workItem}
         <!-- Display the work item's details here -->
-        <div class="content max-h-screen p-8 border-x border-grid-lines">
+        <div class="content max-h-screen border-x border-grid-lines">
           <button class="close-btn" on:click={closeDrawer}>⊗</button>
-          <div class="sticky top-0">
-            <h2 class="text-8xl font-bold uppercase text-center">{workItem.title}</h2>
+          <div class="sw-header grid grid-rows-1 sticky top-0 border-b border-grid-lines p-8">
+            <div>
+              <h2 class="text-8xl font-bold uppercase text-center">{workItem.title}</h2>
+            </div>
           </div>
-          <div class="grid grid-rows-1 max-h-full">
-            <div class="flex items-top justify-center p-8">
-              <img class="max-h-100 w-auto" src={workItem.img} alt={workItem.title} />
+          <div class="grid grid-rows-1">
+            <div class="grid grid-rows-1 max-h-full">
+              <div class="flex items-top justify-center p-8">
+                <img class="max-h-100 w-auto" src={workItem.img} alt={workItem.title} />
+              </div>
             </div>
           </div>
         </div>
@@ -50,13 +54,12 @@
 
 <style lang="scss">
 .drawer {
-  background-color: var(--background-color_dim) !important;
   position: fixed;
   left: 0; right: 0; bottom: 0;
   height: 100vh;
   transform: translateY(100%); /* Start hidden */
   transition: transform 0.3s ease-in-out;
-  background: var(--background-color); /* Add a background to make the content visible */
+  background: var(--background-color_dim); /* Add a background to make the content visible */
   overflow-y: hidden; /* Prevent scrolling on the drawer itself */
 
   &.open {
@@ -66,8 +69,11 @@
   .content {
     max-height: 100vh; /* Adjust based on your needs */
     overflow-y: auto; /* Enable vertical scrolling */
-    padding: 2rem;
     box-sizing: border-box; /* Ensures padding is included in the height calculation */
+
+    .sw-header {
+      background: var(--background-color_dim);
+    }
   }
 
   .close-btn {
