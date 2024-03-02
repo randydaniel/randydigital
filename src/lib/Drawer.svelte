@@ -41,7 +41,6 @@
           </div>
           <div class="grid grid-rows-1">
             <div class="grid grid-rows-1 max-h-full">
-
               <div class="media-grid p-8">
                 {#if workItem.media.video && workItem.media.video !== ''}
                 <div>
@@ -51,14 +50,20 @@
                   </video>
                 </div>
                 {/if}
-                {#if workItem.media.img}
-                <div>
-                  <img src={workItem.media.img} alt={workItem.title} />
-                </div>
+                {#if workItem.media.img.length > 0}
+                  <div class="grid grid-flow-col flow-cols-max gap-8">
+                    {#each workItem.media.img as imgSrc}
+                    <div>
+                      <img src={imgSrc} alt={workItem.title} />
+                    </div>
+                    {/each}
+                  </div>
+                  {:else}
+                  <div>
+                    <img src={workItem.media.img} alt={workItem.title} />
+                  </div>
                 {/if}
               </div>
-
-              
             </div>
           </div>
         </div>

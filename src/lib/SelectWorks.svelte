@@ -7,7 +7,7 @@
 			service: 'Web Development',
       program: 'Framer',
       media: {
-        img: '/select-work/bdc.png',
+        img: ['/select-work/bdc-00.png', '/select-work/bdc-01.png'],
         video: '/select-work/bdc-tour.mp4'
       }
 		},
@@ -16,7 +16,7 @@
 			service: 'Design System',
       program: 'Figma',
       media: {
-        img: '/select-work/mlui.png',
+        img: ['/select-work/mlui-00.png'],
         video: ''
       }
 		},
@@ -25,7 +25,7 @@
 			service: 'Web Development',
       program: 'Salesforce',
       media: {
-        img: '/select-work/kdp.png',
+        img: ['/select-work/kdp-00.png'],
         video: ''
       }
 		},
@@ -34,7 +34,7 @@
 			service: 'UX/UI',
       program: 'Figma',
       media: {
-        img: '/select-work/activated.png',
+        img: ['/select-work/activated-00.png'],
         video: ''
       }
 		},
@@ -43,7 +43,7 @@
 			service: 'Web Development',
       program: 'Multi',
       media: {
-        img: '/select-work/radar.png',
+        img: ['/select-work/radar-00.png'],
         video: ''
       }
 		}
