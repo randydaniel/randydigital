@@ -27,13 +27,13 @@
   });
 </script>
 
-<div class="h-screen border-t border-grid-lines z-10 drawer {workItem ? 'open' : ''}">
+<div class="drawer h-screen border-t border-grid-lines z-10 fixed left-0 right-0 bottom-0 translate-y-full transition-transform duration-300 overflow-y-hidden {workItem ? 'open' : ''}">
   <div class="container">
     <div class="grid grid-cols-1">
       {#if workItem}
         <!-- Display the work item's details here -->
-        <div class="content max-h-screen border-x border-grid-lines">
-          <button class="close-btn" on:click={closeDrawer}>⊗</button>
+        <div class="content max-h-screen border-x border-grid-lines overflow-y-auto box-border">
+          <button class="close-btn absolute top-8 right-8 bg-none border-none cursor-pointer text-3xl font-thin" on:click={closeDrawer}>⊗</button>
           <div class="sw-header grid grid-rows-1 sticky top-0 border-b border-grid-lines p-8">
             <div>
               <h2 class="text-8xl font-bold uppercase text-center">{workItem.title}</h2>
@@ -54,37 +54,14 @@
 
 <style lang="scss">
 .drawer {
-  position: fixed;
-  left: 0; right: 0; bottom: 0;
-  height: 100vh;
-  transform: translateY(100%); /* Start hidden */
-  transition: transform 0.3s ease-in-out;
   background: var(--background-color_dim); /* Add a background to make the content visible */
-  overflow-y: hidden; /* Prevent scrolling on the drawer itself */
 
   &.open {
     transform: translateY(0); /* Slide in */
   }
 
-  .content {
-    max-height: 100vh; /* Adjust based on your needs */
-    overflow-y: auto; /* Enable vertical scrolling */
-    box-sizing: border-box; /* Ensures padding is included in the height calculation */
-
-    .sw-header {
-      background: var(--background-color_dim);
-    }
-  }
-
-  .close-btn {
-    position: absolute;
-    top: 2rem; // Adjust as needed
-    right: 2rem; // Adjust as needed
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 2rem; // Adjust as needed
-    font-weight: lighter;
+  .content .sw-header {
+    background: var(--background-color_dim);
   }
 }
 </style>
