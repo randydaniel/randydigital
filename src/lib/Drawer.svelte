@@ -41,9 +41,24 @@
           </div>
           <div class="grid grid-rows-1">
             <div class="grid grid-rows-1 max-h-full">
-              <div class="flex items-top justify-center p-8">
-                <img class="max-h-100 w-auto" src={workItem.img} alt={workItem.title} />
+
+              <div class="media-grid p-8">
+                {#if workItem.media.video && workItem.media.video !== ''}
+                <div>
+                  <video autoplay loop class="w-full aspect-auto">
+                    <source src={workItem.media.video} type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                {/if}
+                {#if workItem.media.img}
+                <div>
+                  <img src={workItem.media.img} alt={workItem.title} />
+                </div>
+                {/if}
               </div>
+
+              
             </div>
           </div>
         </div>
@@ -60,8 +75,16 @@
     transform: translateY(0); /* Slide in */
   }
 
-  .content .sw-header {
-    background: var(--background-color_dim);
+  .content {
+    .media-grid {
+      display: grid;
+      grid-template-rows: repeat(auto-fit, minmax(auto, 1fr));
+      gap: 2rem;
+    }
+
+    .sw-header {
+      background: var(--background-color_dim);
+    }
   }
 }
 </style>
