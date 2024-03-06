@@ -1,7 +1,7 @@
 <script>
 	import '$lib/scss/global.scss';
-  import Navigation from '$lib/Navigation.svelte';
-  import Footer from '$lib/Footer.svelte';
+  import Navigation from '$lib/components/Navigation.svelte';
+  import Footer from '$lib/components/Footer.svelte';
 </script>
 
 

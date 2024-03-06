@@ -1,54 +1,7 @@
 <script>
-  import Drawer from '$lib/Drawer.svelte';
+  import SelectWorks from '$lib/data/select-works.json';
+  import Drawer from '$lib/components/Drawer.svelte';
   
-	let selectWorks = [
-		{
-			title: 'Boring Design Club',
-			service: 'Web Development',
-      program: 'Framer',
-      media: {
-        img: ['/select-work/bdc-00.png', '/select-work/bdc-01.png'],
-        video: '/select-work/bdc-tour.mp4'
-      }
-		},
-    {
-			title: 'ML UI Design System',
-			service: 'Design System',
-      program: 'Figma',
-      media: {
-        img: ['/select-work/mlui-00.png'],
-        video: ''
-      }
-		},
-    {
-			title: 'Keurig/Dr. Pepper',
-			service: 'Web Development',
-      program: 'Salesforce',
-      media: {
-        img: ['/select-work/kdp-00.png'],
-        video: ''
-      }
-		},
-    {
-			title: 'Activated.Bio',
-			service: 'UX/UI',
-      program: 'Figma',
-      media: {
-        img: ['/select-work/activated-00.png'],
-        video: ''
-      }
-		},
-    {
-			title: 'Radar Relay',
-			service: 'Web Development',
-      program: 'Multi',
-      media: {
-        img: ['/select-work/radar-00.png'],
-        video: ''
-      }
-		}
-	];
-
   let openItemId = null; // Tracks which item's drawer is open
 
   function toggleDrawer(itemId) {
@@ -63,7 +16,7 @@
 <section id="select-works" class="border-b border-grid-lines">
   <div class="container">
     <div class="grid">
-      {#each selectWorks as work, index}
+      {#each SelectWorks as work, index}
       <div class="work relative p-8 border-x border-b border-grid-lines last-of-type:border-b-0">
         <div class="flex mb-6">
           <span class="sw-service text-xs uppercase border bg-primary border-primary rounded-full px-3 py-1 leading-none mr-1">{work.service}</span>
@@ -82,7 +35,7 @@
       {/each}
     </div>
     <!-- Drawer component is outside the loop -->
-    <Drawer workItem={selectWorks[openItemId]} on:close={() => openItemId = null} />
+    <Drawer workItem={SelectWorks[openItemId]} on:close={() => openItemId = null} />
   </div>
 </section>
 

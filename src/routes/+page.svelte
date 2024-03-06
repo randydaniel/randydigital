@@ -1,9 +1,9 @@
 <script>
-  import Hero from '$lib/Hero.svelte';
-  import Services from '$lib/Services.svelte';
-  import Clients from '$lib/Clients.svelte';
-  import Testimonials from '$lib/Testimonials.svelte';
-  import SelectWorks from '$lib/SelectWorks.svelte';
+  import Hero from '$lib/components/Hero.svelte';
+  import Services from '$lib/components/Services.svelte';
+  import Clients from '$lib/components/Clients.svelte';
+  import Testimonials from '$lib/components/Testimonials.svelte';
+  import SelectWorks from '$lib/components/SelectWorks.svelte';
 </script>
 
 

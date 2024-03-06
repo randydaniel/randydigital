@@ -35,7 +35,7 @@
     }
 
     &:before {
-      content: url('assets/images/blockquote-quote.svg');
+      content: url('../assets/images/blockquote-quote.svg');
       position: absolute;
       top: -0.5rem; left: -0.5rem;
     }
