@@ -32,7 +32,7 @@
     <div class="grid grid-cols-1">
       {#if workItem}
         <!-- Display the work item's details here -->
-        <div class="content max-h-screen border-x border-grid-lines overflow-y-auto box-border">
+        <div class="content h-screen border-x border-grid-lines overflow-y-auto box-border">
           <button class="close-btn absolute top-8 right-8 bg-none border-none cursor-pointer text-3xl font-thin z-10" on:click={closeDrawer}>⊗</button>
           <div class="sw-header grid grid-rows-1 sticky top-0 border-b border-grid-lines p-8">
             <div>
@@ -43,7 +43,7 @@
             <div class="grid grid-rows-1 max-h-full">
               <div class="media-grid p-8">
                 {#if workItem.media.video && workItem.media.video !== ''}
-                <div>
+                <div class="p-8 border border-primary border-dashed rounded-2xl">
                   <video autoplay loop class="w-full aspect-auto">
                     <source src={workItem.media.video} type="video/mp4">
                     Your browser does not support the video tag.
@@ -53,13 +53,13 @@
                 {#if workItem.media.img.length > 0}
                   <div class="grid grid-flow-col flow-cols-max gap-8">
                     {#each workItem.media.img as imgSrc}
-                    <div>
+                    <div class="p-8 border border-primary border-dashed rounded-2xl">
                       <img src={imgSrc} alt={workItem.title} />
                     </div>
                     {/each}
                   </div>
                   {:else}
-                  <div>
+                  <div class="p-8 border border-primary border-dashed rounded-2xl">
                     <img src={workItem.media.img} alt={workItem.title} />
                   </div>
                 {/if}
