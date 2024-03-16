@@ -44,15 +44,15 @@
       </div>
     </div>
     <!-- Let's Work Together -->
-    <div id="lets-work-together" class="grid grid-cols-6 border-x border-t border-grid-lines">
-      <div class="col-span-4 border-r border-grid-lines p-8">
+    <div id="lets-work-together" class="grid grid-auto-rows lg:grid-cols-6 border-x border-t border-grid-lines">
+      <div class="col-auto lg:col-span-4 border-b lg:border-b-0 lg:border-r border-grid-lines p-8">
         <h2 class="text-2xl mb-4">Introduction</h2>
         <p class="font-light tracking-tight">My name is Randy Daniel. I'm an Interaction Designer based in Baltimore, Maryland, bringing over 15 years of expertise in both design and development. My work focuses on creating meaningful digital experiences that seamlessly integrate user needs with innovative design solutions.</p>
       </div>
-      <div class="col-span-2 border-grid-lines">
+      <div class="col-auto lg:col-span-2 border-grid-lines p-8 lg:p-0">
         <a class="block w-full h-full hover:bg-primary transition transition-duration-300 ease-in-out" href="mailto:hey@randy.digital">
           <div class="flex items-center justify-center w-full h-full">
-            <div class="flex font-display text-2xl uppercase mr-2 px-4 py-2 text-center border-2 border-dashed rounded-full">
+            <div class="w-full lg:w-auto flex font-display text-2xl uppercase mr-2 px-4 py-2 text-center border-2 border-dashed rounded-full justify-center">
               <span>Let's Work Together</span>
               <span class="flex justify-center font-display text-2xl uppercase ml-2 border-2 border-dashed rounded-full leading-none w-[30px] h-[30px]">↗</span>
             </div>
