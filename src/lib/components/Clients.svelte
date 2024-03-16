@@ -9,28 +9,28 @@
 
 <section id="clients" class="border-b border-grid-lines">
   <div class="container">
-    <div class="grid grid-cols-6 border-x border-grid-lines">
-      <div class="p-8 border-r border-grid-lines">
+    <div class="grid grid-rows-auto lg:grid-cols-6 border-x border-grid-lines">
+      <div class="p-8 border-b lg:border-r border-grid-lines">
         <div class="flex items-center justify-center h-full w-full opacity-50">
           <img src={Salesforce} alt="Salesforce" />
         </div>
       </div>
-      <div class="p-8 border-r border-grid-lines">
+      <div class="p-8 border-b lg:border-r border-grid-lines">
         <div class="flex items-center justify-center h-full w-full opacity-50">
           <img src={PublicisSapient} alt="PublicisSapient" />
         </div>
       </div>
-      <div class="p-8 border-r border-grid-lines">
+      <div class="p-8 border-b lg:border-r border-grid-lines">
         <div class="flex items-center justify-center h-full w-full opacity-50">
           <img src={KDP} alt="Keurig Dr. Pepper" />
         </div>
       </div>
-      <div class="p-8 border-r border-grid-lines">
+      <div class="p-8 border-b lg:border-r border-grid-lines">
         <div class="flex items-center justify-center h-full w-full opacity-50">
           <img src={Parsons} alt="Parsons" />
         </div>
       </div>
-      <div class="p-8 border-r border-grid-lines">
+      <div class="p-8 border-b lg:border-r border-grid-lines">
         <div class="flex items-center justify-center h-full w-full opacity-50">
           <img src={Radar} alt="Radar" />
         </div>

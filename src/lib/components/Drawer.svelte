@@ -36,7 +36,7 @@
           <button class="close-btn absolute top-8 right-8 bg-none border-none cursor-pointer text-3xl font-thin z-10" on:click={closeDrawer}>⊗</button>
           <div class="sw-header grid grid-rows-1 sticky top-0 border-b border-grid-lines p-8">
             <div>
-              <h2 class="text-8xl font-bold uppercase text-center">{workItem.title}</h2>
+              <h2 class="text-2xl lg:text-8xl font-bold uppercase text-center">{workItem.title}</h2>
             </div>
           </div>
           <div class="grid grid-rows-1">
