@@ -22,7 +22,7 @@
           <span class="sw-service text-xs uppercase border bg-primary border-primary rounded-full px-3 py-1 leading-none mr-1">{work.service}</span>
           <span class="sw-program text-xs uppercase border border-primary border-dashed rounded-full px-3 py-1 leading-none">{work.program}</span>
         </div>
-        <h2 class="text-8xl font-bold uppercase">
+        <h2 class="text-6xl lg:text-8xl font-bold uppercase">
           <a href="javascript:void(0)" 
             class="hover:underline transition transition-duration-300 ease-in-out"
             role="button" 

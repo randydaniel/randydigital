@@ -42,9 +42,9 @@
 
 <footer id="contact" class="border-b border-grid-lines">
   <div class="container">
-    <div class="grid grid-cols-6 border-x border-b border-grid-lines">
+    <div class="grid grid-auto-rows lg:grid-cols-6 border-x border-b border-grid-lines">
       <!-- Branding -->
-      <div class="col-span-3 p-8 border-r border-grid-lines">
+      <div class="col-span-3 p-8 border-b lg:border-r border-grid-lines">
         <div class="flex items-center justify-start h-full w-full">
           <img class="branding" src={BrandingImg} alt="Randy Digital" /><span class="font-display uppercase ml-4">&copy; All Rights Reserved 2024 — {dayOfWeek}, {currentTime}</span>
         </div>
