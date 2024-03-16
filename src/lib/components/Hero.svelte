@@ -30,29 +30,29 @@
     <!-- Intro/Skiilset -->
     <div class="grid border-x border-grid-lines px-8 py-6 md:px-8 md:py-12 lg:px-8 lg:py-24">
       <div class="flex flex-wrap" bind:this={elements}>
-        <span class="inline-block font-display uppercase text-4xl px-3 md:px-4 md:py-1 lg:text-8xl lg:px-8 lg:py-3 border-2 border-dashed rounded-full mb-4 mr-4">UI/UX</span>
-        <img class="size-[44px] md:size-[52px] lg:size-[124px] mb-4 mr-4" src={TagSmile} alt="" />
-        <span class="inline-block font-display uppercase text-4xl px-3 md:px-4 md:py-1 lg:text-8xl lg:px-8 lg:py-3 border-2 border-dashed rounded-full mb-4 mr-4">Brand Identity</span>
-        <img class="size-[44px] md:size-[52px] lg:size-[124px] mb-4 mr-4" src={TagSparkle} alt="" />
-        <span class="inline-block font-display uppercase text-4xl px-3 md:px-4 md:py-1 lg:text-8xl lg:px-8 lg:py-3 border-2 border-dashed rounded-full mb-4 mr-4">Design Systems</span>
-        <img class="size-[44px] md:size-[52px] lg:size-[124px] mb-4 mr-4" src={TagOutline} alt="" />
-        <img class="size-[44px] md:size-[52px] lg:size-[124px] mb-4 mr-4" src={TagFull} alt="" />
-        <span class="inline-block font-display uppercase text-4xl px-3 md:px-4 md:py-1 lg:text-8xl lg:px-8 lg:py-3 border-2 border-dashed rounded-full mb-4 mr-4">Product Design</span>
-        <img class="size-[44px] md:size-[52px] lg:size-[124px] mb-4 mr-4" src={TagOutline} alt="" />
-        <span class="inline-block font-display uppercase text-4xl px-3 md:px-4 md:py-1 lg:text-8xl lg:px-8 lg:py-3 border-2 border-dashed rounded-full mb-4 mr-4 whitespace-nowrap">Web Development</span>
-        <img class="size-[44px] md:size-[52px] lg:size-[124px] mb-4 mr-4" src={TagHeart} alt="" />
+        <span class="inline-block font-display uppercase text-2xl px-3 md:px-4 md:py-1 lg:text-8xl lg:px-8 lg:py-3 border-2 border-dashed rounded-full mb-4 mr-4">UI/UX</span>
+        <img class="hidden md:inline-block size-[36px] md:size-[44px] lg:size-[124px] mb-4 mr-4" src={TagSmile} alt="" />
+        <span class="inline-block font-display uppercase text-2xl px-3 md:px-4 md:py-1 lg:text-8xl lg:px-8 lg:py-3 border-2 border-dashed rounded-full mb-4 mr-4">Brand Identity</span>
+        <img class="hidden md:inline-block size-[36px] md:size-[44px] lg:size-[124px] mb-4 mr-4" src={TagSparkle} alt="" />
+        <span class="inline-block font-display uppercase text-2xl px-3 md:px-4 md:py-1 lg:text-8xl lg:px-8 lg:py-3 border-2 border-dashed rounded-full mb-4 mr-4">Design Systems</span>
+        <img class="hidden md:inline-block size-[36px] md:size-[44px] lg:size-[124px] mb-4 mr-4" src={TagOutline} alt="" />
+        <img class="hidden md:inline-block size-[36px] md:size-[44px] lg:size-[124px] mb-4 mr-4" src={TagFull} alt="" />
+        <span class="inline-block font-display uppercase text-2xl px-3 md:px-4 md:py-1 lg:text-8xl lg:px-8 lg:py-3 border-2 border-dashed rounded-full mb-4 mr-4">Product Design</span>
+        <img class="hidden md:inline-block size-[36px] md:size-[44px] lg:size-[124px] mb-4 mr-4" src={TagOutline} alt="" />
+        <span class="inline-block font-display uppercase text-2xl px-3 md:px-4 md:py-1 lg:text-8xl lg:px-8 lg:py-3 border-2 border-dashed rounded-full mb-4 mr-4 whitespace-nowrap">Web Development</span>
+        <img class="size-[36px] md:size-[44px] lg:size-[124px] mb-4 mr-4" src={TagHeart} alt="" />
       </div>
     </div>
     <!-- Let's Work Together -->
-    <div id="lets-work-together" class="grid grid-cols-6 border-x border-t border-grid-lines">
-      <div class="col-span-4 border-r border-grid-lines p-8">
+    <div id="lets-work-together" class="grid grid-auto-rows lg:grid-cols-6 border-x border-t border-grid-lines">
+      <div class="col-auto lg:col-span-4 border-b lg:border-b-0 lg:border-r border-grid-lines p-8">
         <h2 class="text-2xl mb-4">Introduction</h2>
         <p class="font-light tracking-tight">My name is Randy Daniel. I'm an Interaction Designer based in Baltimore, Maryland, bringing over 15 years of expertise in both design and development. My work focuses on creating meaningful digital experiences that seamlessly integrate user needs with innovative design solutions.</p>
       </div>
-      <div class="col-span-2 border-grid-lines">
+      <div class="col-auto lg:col-span-2 border-grid-lines p-8 lg:p-0">
         <a class="block w-full h-full hover:bg-primary transition transition-duration-300 ease-in-out" href="mailto:hey@randy.digital">
           <div class="flex items-center justify-center w-full h-full">
-            <div class="flex font-display text-2xl uppercase mr-2 px-4 py-2 text-center border-2 border-dashed rounded-full">
+            <div class="w-full lg:w-auto flex font-display text-2xl uppercase mr-2 px-4 py-2 text-center border-2 border-dashed rounded-full justify-center">
               <span>Let's Work Together</span>
               <span class="flex justify-center font-display text-2xl uppercase ml-2 border-2 border-dashed rounded-full leading-none w-[30px] h-[30px]">↗</span>
             </div>
