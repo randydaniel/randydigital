@@ -6,11 +6,11 @@
 <nav class="border-y border-grid-lines sticky top-0 z-10">
   <div class="container">
     <ul class="grid grid-cols-6 font-display border-x border-grid-lines">
-      <li class="col-span-2 border-r border-grid-lines"><div class="flex justify-center h-full w-full"><img class="branding" src={BrandingImg} alt="Randy Digital" /></div></li>
-      <li class="border-r border-grid-lines"><a href="#select-works" class="block p-8 w-full h-full text-center text-2xl hover:bg-primary transition transition-duration-300 ease-in-out">Select Works</a></li>
-      <li class="border-r border-grid-lines"><a href="#select-works" class="block p-8 w-full h-full text-center text-2xl hover:bg-primary transition transition-duration-300 ease-in-out hover:cursor-default">Playground<sup class="text-sm">(Soon)</sup></a></li>
-      <li class="border-r border-grid-lines"><a href="#contact" class="block p-8 w-full h-full text-center text-2xl hover:bg-primary transition transition-duration-300 ease-in-out">Contact</a></li>
-      <li class="p-8 text-center"><ThemeToggle /></li>
+      <li class="col-span-full p-8 border-r-0 border-b-0 lg:col-span-2 lg:p-0 lg:border-r border-grid-lines"><div class="flex justify-center h-full w-full"><img class="branding" src={BrandingImg} alt="Randy Digital" /></div></li>
+      <li class="hidden lg:inline border-r border-grid-lines"><a href="#select-works" class="block p-8 w-full h-full text-center text-2xl hover:bg-primary transition transition-duration-300 ease-in-out">Select Works</a></li>
+      <li class="hidden lg:inline border-r border-grid-lines"><a href="#select-works" class="block p-8 w-full h-full text-center text-2xl hover:bg-primary transition transition-duration-300 ease-in-out hover:cursor-default">Playground<sup class="text-sm">(Soon)</sup></a></li>
+      <li class="hidden lg:inline border-r border-grid-lines"><a href="#contact" class="block p-8 w-full h-full text-center text-2xl hover:bg-primary transition transition-duration-300 ease-in-out">Contact</a></li>
+      <li class="hidden lg:inline p-8 text-center"><ThemeToggle /></li>
     </ul>
   </div>
 </nav>
