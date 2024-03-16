@@ -28,19 +28,19 @@
 <section class="border-b border-grid-lines">
   <div class="container">
     <!-- Intro/Skiilset -->
-    <div class="grid border-x border-grid-lines px-8 py-24">
+    <div class="grid border-x border-grid-lines px-8 py-6 md:px-8 md:py-12 lg:px-8 lg:py-24">
       <div class="flex flex-wrap" bind:this={elements}>
-        <span class="inline-block font-display text-8xl uppercase px-8 py-3 border-2 border-dashed rounded-full mb-4 mr-4">UI/UX</span>
-        <img class="mb-4 mr-4" src={TagSmile} alt="" />
-        <span class="inline-block font-display text-8xl uppercase px-8 py-3 border-2 border-dashed rounded-full mb-4 mr-4">Brand Identity</span>
-        <img class="mb-4 mr-4" src={TagSparkle} alt="" />
-        <span class="inline-block font-display text-8xl uppercase px-8 py-3 border-2 border-dashed rounded-full mb-4 mr-4">Design Systems</span>
-        <img class="mb-4 mr-4" src={TagOutline} alt="" />
-        <img class="mb-4 mr-4" src={TagFull} alt="" />
-        <span class="inline-block font-display text-8xl uppercase px-8 py-3 border-2 border-dashed rounded-full mb-4 mr-4">Product Design</span>
-        <img class="mb-4 mr-4" src={TagOutline} alt="" />
-        <span class="inline-block font-display text-8xl uppercase px-8 py-3 border-2 border-dashed rounded-full mb-4 mr-4">Web Development</span>
-        <img class="mb-4 mr-4" src={TagHeart} alt="" />
+        <span class="inline-block font-display uppercase text-4xl px-3 md:px-4 md:py-1 lg:text-8xl lg:px-8 lg:py-3 border-2 border-dashed rounded-full mb-4 mr-4">UI/UX</span>
+        <img class="size-[44px] md:size-[52px] lg:size-[124px] mb-4 mr-4" src={TagSmile} alt="" />
+        <span class="inline-block font-display uppercase text-4xl px-3 md:px-4 md:py-1 lg:text-8xl lg:px-8 lg:py-3 border-2 border-dashed rounded-full mb-4 mr-4">Brand Identity</span>
+        <img class="size-[44px] md:size-[52px] lg:size-[124px] mb-4 mr-4" src={TagSparkle} alt="" />
+        <span class="inline-block font-display uppercase text-4xl px-3 md:px-4 md:py-1 lg:text-8xl lg:px-8 lg:py-3 border-2 border-dashed rounded-full mb-4 mr-4">Design Systems</span>
+        <img class="size-[44px] md:size-[52px] lg:size-[124px] mb-4 mr-4" src={TagOutline} alt="" />
+        <img class="size-[44px] md:size-[52px] lg:size-[124px] mb-4 mr-4" src={TagFull} alt="" />
+        <span class="inline-block font-display uppercase text-4xl px-3 md:px-4 md:py-1 lg:text-8xl lg:px-8 lg:py-3 border-2 border-dashed rounded-full mb-4 mr-4">Product Design</span>
+        <img class="size-[44px] md:size-[52px] lg:size-[124px] mb-4 mr-4" src={TagOutline} alt="" />
+        <span class="inline-block font-display uppercase text-4xl px-3 md:px-4 md:py-1 lg:text-8xl lg:px-8 lg:py-3 border-2 border-dashed rounded-full mb-4 mr-4 whitespace-nowrap">Web Development</span>
+        <img class="size-[44px] md:size-[52px] lg:size-[124px] mb-4 mr-4" src={TagHeart} alt="" />
       </div>
     </div>
     <!-- Let's Work Together -->
