@@ -1,7 +1,7 @@
 <section id="testimonials" class="border-b border-grid-lines">
   <div class="container">
     <div class="grid grid-auto-rows lg:grid-cols-2 border-x border-grid-lines">
-      <div class="p-8 border-b lg:border-r border-grid-lines">
+      <div class="p-8 border-b lg:border-r lg:border-b-0 border-grid-lines">
         <div class="testimonial-item relative flex flex-col justify-between h-full">
           <blockquote class="font-light tracking-tight mb-16">Randy is a remarkable designer with unparalleled attention to detail. His work at Radar has pushed the envelope of Blockchain/Ethereum UX...</blockquote>
           <div>
