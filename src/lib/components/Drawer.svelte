@@ -51,17 +51,11 @@
                 </div>
                 {/if}
                 {#if workItem.media.img.length > 0}
-                  <div class="grid grid-flow-col flow-cols-max gap-4 lg:gap-8">
-                    {#each workItem.media.img as imgSrc}
-                    <div class="p-4 lg:p-8 border border-primary border-dashed rounded-2xl">
-                      <img src={imgSrc} alt={workItem.title} />
-                    </div>
-                    {/each}
-                  </div>
-                  {:else}
+                  {#each workItem.media.img as imgSrc}
                   <div class="p-4 lg:p-8 border border-primary border-dashed rounded-2xl">
-                    <img src={workItem.media.img} alt={workItem.title} />
+                    <img class="w-full aspect-auto" src={imgSrc} alt={workItem.title} />
                   </div>
+                  {/each}
                 {/if}
               </div>
             </div>
